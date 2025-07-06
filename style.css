@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdf1e2;
+}
+
+.cabecera {
+  text-align: center;
+  background-color: #643e35;
+}
+
+.imagen-principal {
+  width: 100%;
+  max-width: 1366px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Botón de descarga */
+.boton-container {
+  background-color: #fdf1e2;
+  padding: 2rem 0;
+}
+
+.boton-descarga {
+  background-color: #777;
+  color: #643e35;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  border: 2px solid #643e35;
+  font-size: 1.2rem;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.boton-descarga:hover {
+  background-color: #555;
+  color: #fff;
+}
