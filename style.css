@@ -1,42 +1,117 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf1e2;
+  background-color: #f3e7d9;
+  color: #5b352e;
 }
 
-.cabecera {
+header {
+  background-color: #6e443d;
   text-align: center;
-  background-color: #643e35;
+  padding: 2rem 1rem;
 }
 
-.imagen-principal {
-  width: 100%;
-  max-width: 1366px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+header img {
+  max-width: 300px;
 }
 
-/* Botón de descarga */
-.boton-container {
-  background-color: #fdf1e2;
-  padding: 2rem 0;
+nav {
+  background-color: #e2c3a4;
+  padding: 1rem;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 3px;
 }
 
-.boton-descarga {
-  background-color: #777;
-  color: #643e35;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  border: 2px solid #643e35;
-  font-size: 1.2rem;
+nav span {
+  margin: 0 10px;
+}
+
+.catalogo {
+  text-align: center;
+  margin: 3rem auto;
+}
+
+.catalogo a {
   display: inline-block;
-  transition: background-color 0.3s;
+  background-color: #808080;
+  color: #5b352e;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.boton-descarga:hover {
-  background-color: #555;
+.catalogo a:hover {
+  background-color: #6e443d;
+  color: #f3e7d9;
+}
+
+.temporada {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.qr-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #6e443d;
+  padding: 3rem 1rem;
   color: #fff;
+}
+
+.qr-section img {
+  width: 200px;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background: white;
+  padding: 10px;
+}
+
+.qr-text {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .qr-section {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #5b352e;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #6e443d;
+  text-decoration: underline;
+}
+.qr-text {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #f3e7d9;
+}
+
+.qr-text span {
+  display: block;
+  margin: 0.2rem 0;
+}
+.flecha {
+  width: 80px;
+  margin-top: 1rem;
+  transform: rotate(10deg);
+  filter: brightness(5);
 }
