@@ -261,3 +261,19 @@ nav a:hover {
 .formulario-consultas button:hover {
   background-color: #805544;
 }
+.btn-volver {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #6e443d;
+  color: #f3e7d9;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.btn-volver:hover {
+  background-color: #805544;
+}
