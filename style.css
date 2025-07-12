@@ -263,17 +263,48 @@ nav a:hover {
 }
 .btn-volver {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 0.8rem 1.5rem;
+  margin: 2rem auto;
+  padding: 0.8rem 1.8rem;
   background-color: #6e443d;
   color: #f3e7d9;
   text-decoration: none;
   border-radius: 25px;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-volver i {
+  margin-right: 0.5rem;
 }
 
 .btn-volver:hover {
   background-color: #805544;
+  transform: translateY(-2px);
+}
+.formulario-consultas textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  resize: vertical; /* permite que el usuario agrande el área si lo desea */
+}
+.formulario-consultas button[type="reset"] {
+  background-color: #999;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-consultas button[type="reset"]:hover {
+  background-color: #777;
 }
