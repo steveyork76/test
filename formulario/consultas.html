@@ -30,18 +30,30 @@
 
   <section class="formulario-consultas">
     <h1>Formulario de Consultas</h1>
-    <form action="https://formsubmit.co/ejorquec@email.com" method="POST">
+   <form action="https://formsubmit.co/a1d35269a33c3ca2e22e094a4e8b6fbb" method="POST">
       <label for="name">Nombre:</label>
       <input type="text" id="name" name="name" required />
 
       <label for="email">Correo electrónico:</label>
       <input type="email" id="email" name="email" required />
 
-      <button type="submit">Enviar</button>
-        
-    </form>
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Escribe tu consulta aquí..."></textarea>
 
-   <p>
+      <!-- Redirección tras envío -->
+      <input type="hidden" name="_next" value="gracias.html" />
+
+      <!-- Protección antispam -->
+      <input type="hidden" name="_captcha" value="false">
+
+  <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+    <button type="submit">Enviar</button>
+    <button type="reset" style="background-color: #999;">Limpiar</button>
+  </div>
+</form>
+
+
+   <p style="text-align: center;">
       <a href="../index.html" class="btn-volver">
         <i class="fa-solid fa-arrow-left"></i> Volver al inicio
       </a>
