@@ -1,0 +1,56 @@
+.producto {
+  margin: 2rem auto;
+  text-align: center;
+  max-width: 400px;
+}
+
+.producto-img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.colores {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.etiqueta-color {
+  display: inline-block;
+  background-color: #e0d6d2;
+  color: #5b352e;
+  padding: 0.3rem 0.8rem;
+  margin: 0.3rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.precio-final {
+  background-color: #b45f5f;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.btn-volver {
+  display: inline-block;
+  margin: 3rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #b45f5f;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  text-align: center;
+}
