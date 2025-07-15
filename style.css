@@ -353,6 +353,41 @@ nav a:hover {
     content: "\f060"; /* fa-arrow-left */
   }
 }
+.footer {
+  background-color: #f4ecea;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5b352e;
+  position: relative;
+}
+
+.redes-sociales {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.redes-sociales a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #5b352e;
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, color 0.3s;
+}
+
+.redes-sociales a:hover {
+  background-color: #b45f5f;
+  color: white;
+}
 
 
 
