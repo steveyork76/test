@@ -31,16 +31,51 @@ body {
 /* ENCABEZADO */
 /* -------------------- */
 header {
-  background-color: #6e443d;
-  text-align: center;
-  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
-header img {
-  max-width: 400px; /* antes era 300px */
+.encabezado {
+  position: relative;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  max-width: 200px;
+  border-radius: 5%;
+}
+.encabezado .logo {
+  max-width: 400px; /* Aquí agrandas el logo */
   width: 100%;
   height: auto;
   border-radius: 5%;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Botón catálogo pequeño y discreto */
+.btn-catalogo {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  background-color: transparent;
+  color: #b45f5f;
+  text-decoration: none;
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+  z-index: 10;
+}
+
+.btn-catalogo:hover {
+  color: #944f4f;
 }
 /* -------------------- */
 /* NAVEGACIÓN */
