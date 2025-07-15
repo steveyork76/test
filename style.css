@@ -315,6 +315,45 @@ nav a:hover {
   color: #6e443d;
   font-size: 2.5rem; /* Ajusta este valor al tamaño deseado */
 }
+.qr-contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.qr-contenedor img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.arrow-icon::before {
+  content: "\f063"; /* fa-arrow-down por defecto */
+}
+
+@media (min-width: 768px) {
+  .qr-contenedor {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .qr-contenedor.invertido {
+    flex-direction: row-reverse;
+  }
+
+  .qr-contenedor:not(.invertido) .arrow-icon::before {
+    content: "\f061"; /* fa-arrow-right */
+  }
+
+  .qr-contenedor.invertido .arrow-icon::before {
+    content: "\f060"; /* fa-arrow-left */
+  }
+}
+
 
 
 
