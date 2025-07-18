@@ -199,3 +199,19 @@
 .btn-comprar i {
   margin-right: 0.5rem;
 }
+.stock {
+  font-weight: bold;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.agotado-texto {
+  color: #b00020;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.producto.agotado {
+  opacity: 0.6;
+}
