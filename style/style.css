@@ -59,7 +59,7 @@ body {
   top: 0; left: 0; right: 0; bottom: 0;
   background: url('../img/estrellas.gif') repeat;
   background-size: cover;
-  opacity: 0.25;
+  opacity: 0.75;
   pointer-events: none;
   z-index: 0;
 }

@@ -1,33 +1,60 @@
+/* -------------------- */
+/* FUENTES PERSONALIZADAS */
+/* -------------------- */
 @font-face {
   font-family: 'Mistrully';
   src: url('../fonts/Mistrully.ttf') format('truetype');
 }
 
+/* -------------------- */
+/* TITULO DE CATEGORÍA */
+/* -------------------- */
 .titulo-categoria {
   font-family: 'Mistrully', 'Pacifico', cursive;
   font-size: 3rem;
   text-align: center;
-  margin: 0; /* <-- elimina todos los márgenes */
+  margin: 0;
   color: #5b352e;
   position: relative;
   z-index: 2;
 }
 
-
+/* -------------------- */
+/* FONDO DE CATEGORÍA CON OPACIDAD SOLO EN IMAGEN */
+/* -------------------- */
 .fondo-categoria {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 30vh;
   position: relative;
-  height: 30vh; /* 30% del alto visible */
+  height: 30vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  /*margin-bottom: 2rem;*/
+  overflow: hidden;
   animation: fade-in 2s ease-out;
 }
 
+.fondo-categoria::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.titulo-categoria h1 {
+  font-size: 4rem;
+  color: #5b352e;
+  position: relative;
+  z-index: 2;
+  font-family: 'Mistrully', 'Pacifico', cursive;
+  margin: 0;
+}
+
+/* -------------------- */
+/* DESCRIPCIÓN GENERAL */
+/* -------------------- */
 .descripcion {
   text-align: center;
   margin: 1rem auto;
@@ -36,6 +63,9 @@
   color: #444;
 }
 
+/* -------------------- */
+/* GALERÍA DE PRODUCTOS */
+/* -------------------- */
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -61,6 +91,9 @@
   color: #555;
 }
 
+/* -------------------- */
+/* PIE DE PÁGINA */
+/* -------------------- */
 .volver-footer {
   text-align: center;
   margin-top: 1rem;
@@ -81,30 +114,88 @@
 .btn-volver:hover {
   background-color: #7c1f1f;
 }
-.mitones-fondo {
+
+/* -------------------- */
+/* FONDOS POR CATEGORÍA */
+/* -------------------- */
+.mitones-fondo::before {
   background-image: url('../img/mitones/fondo_mitones.jpg');
 }
-.gorros-fondo {
+
+.gorros-fondo::before {
   background-image: url('../img/gorros/fondo_gorros.jpg');
 }
-.calcetines-fondo {
+
+.calcetines-fondo::before {
   background-image: url('../img/calcetines/fondo_calcetines.jpg');
 }
-.bandoleras-fondo {
+
+.bandoleras-fondo::before {
   background-image: url('../img/bandoleras/fondo_bandoleras.jpg');
 }
-.straps-fondo {
+
+.straps-fondo::before {
   background-image: url('../img/straps/fondo_straps.jpg');
 }
-.billeteras-fondo {
+
+.billeteras-fondo::before {
   background-image: url('../img/billeteras/fondo_billeteras.jpg');
 }
-.ecobag-fondo {
+
+.ecobag-fondo::before {
   background-image: url('../img/ecobag/fondo_ecobag.jpg');
 }
-.bufanda-fondo {
+
+.bufanda-fondo::before {
   background-image: url('../img/bufandas/fondo_bufanda.jpg');
 }
-.consultas-fondo {
+
+.consultas-fondo::before {
   background-image: url('../formulario/fondo_consultas.jpg');
+}
+
+/* -------------------- */
+/* TARJETAS DE PRODUCTO */
+/* -------------------- */
+.producto {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.producto p {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+}
+
+.btn-comprar {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #25D366; /* Color WhatsApp */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #1eb851; /* Verde un poco más oscuro */
+}
+
+.btn-comprar i {
+  margin-right: 0.5rem;
 }
