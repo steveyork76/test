@@ -1,0 +1,73 @@
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consultas | LUNICA ACCESORIOS</title>
+  <link rel="icon" href="../img/luna.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/categorias.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="encabezado">
+    <a href="../catalogo/Catalogo.pdf" target="_blank" class="btn-catalogo" title="Ver catálogo en PDF">
+      <i class="fa-solid fa-file-pdf"></i>
+    </a>
+    <img src="../img/1.png" alt="Logo Lunica Accesorios" class="logo">
+  </header>
+
+
+  <nav class="menu">
+    <a href="../pages/gorros/gorros.html"><i class="fa-solid fa-hat-cowboy"></i> Gorros</a>
+    <a href="../pages/mitones/mitones.html"><i class="fa-solid fa-hand-sparkles"></i> Mitones</a>
+    <a href="../pages/calcetines/calcetines.html"><i class="fa-solid fa-socks"></i> Calcetines</a>
+    <a href="../pages/bandoleras/bandoleras.html"><i class="fa-solid fa-bag-shopping"></i> Bandoleras</a>
+    <a href="../pages/straps/straps.html"><i class="fa-solid fa-grip-lines"></i> Straps</a>
+    <a href="../pages/billeteras/billeteras.html"><i class="fa-solid fa-wallet"></i> Billeteras</a>
+    <a href="../pages/ecobag/ecobag.html"><i class="fa-solid fa-recycle"></i> Ecobag</a>
+    <a href="../pages/bufandas/bufandas.html"><i class="fa-solid fa-snowflake"></i> Bufandas</a>    
+    <a href="consultas.html" class="activo"><i class="fa-solid fa-envelope"></i> Consultas</a>
+
+  </nav>
+  <main>
+  <div class="titulo-categoria fondo-categoria consultas-fondo">
+      <h1 class="fondo-categoria">Consultas</h1>
+    </div>
+  <section class="formulario-consultas">
+    <h1>Formulario de Consultas</h1>
+   <form action="https://formsubmit.co/a1d35269a33c3ca2e22e094a4e8b6fbb" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Escribe tu consulta aquí..."></textarea>
+
+      <!-- Redirección tras envío -->
+      <input type="hidden" name="_next" value="https://www.lunica.cl/formulario/gracias.html">
+
+      <!-- Protección antispam -->
+      <input type="hidden" name="_captcha" value="false">
+
+  <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+    <button type="submit">Enviar</button>
+    <button type="reset" style="background-color: #999;">Limpiar</button>
+  </div>
+</form>
+</main>
+  <footer class="footer">
+     <div class="volver-footer">
+      <a href="../index.html" class="btn-volver">
+        <i class="fa-solid fa-arrow-left"></i> Volver al inicio
+      </a>
+    </div>
+    <div class="redes-sociales">
+      <a href="../links/construccion/en_construccion.html" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="../links/construccion/en_construccion.html" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="../links/construccion/en_construccion.html" target="_blank" title="Teléfono"><i class="fa-solid fa-phone"></i></a>
+      <a href="../links/construccion/en_construccion.html" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    </div>
+    <p>© LUNICA 2025 - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Mistrully';
+  src: url('../fonts/Mistrully.ttf') format('truetype');
+}
+
+.titulo-categoria {
+  font-family: 'Mistrully', 'Pacifico', cursive;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0; /* <-- elimina todos los márgenes */
+  color: #5b352e;
+  position: relative;
+  z-index: 2;
+}
+
+
+.fondo-categoria {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  position: relative;
+  height: 30vh; /* 30% del alto visible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*margin-bottom: 2rem;*/
+  animation: fade-in 2s ease-out;
+}
+
+.descripcion {
+  text-align: center;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  max-width: 600px;
+  color: #444;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+.volver-footer {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-volver {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  background-color: #a52a2a;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #7c1f1f;
+}
+.mitones-fondo {
+  background-image: url('../img/mitones/fondo_mitones.jpg');
+}
+.gorros-fondo {
+  background-image: url('../img/gorros/fondo_gorros.jpg');
+}
+.calcetines-fondo {
+  background-image: url('../img/calcetines/fondo_calcetines.jpg');
+}
+.bandoleras-fondo {
+  background-image: url('../img/bandoleras/fondo_bandoleras.jpg');
+}
+.straps-fondo {
+  background-image: url('../img/straps/fondo_straps.jpg');
+}
+.billeteras-fondo {
+  background-image: url('../img/billeteras/fondo_billeteras.jpg');
+}
+.ecobag-fondo {
+  background-image: url('../img/ecobag/fondo_ecobag.jpg');
+}
+.bufanda-fondo {
+  background-image: url('../img/bufandas/fondo_bufanda.jpg');
+}
+.consultas-fondo {
+  background-image: url('../formulario/fondo_consultas.jpg');
+}
