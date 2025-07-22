@@ -11,14 +11,12 @@
 </head>
 <body>
 
-  <body>
   <header class="encabezado">
-  <a href="./catalogo/Catalogo.pdf" target="_blank" class="btn-catalogo" title="Ver catálogo en PDF">
-    <i class="fa-solid fa-file-pdf"></i>
-  </a>
-  <img src="img/1.png" alt="Logo Lunica Accesorios" class="logo">
-</header>
-
+    <a href="./catalogo/Catalogo.pdf" target="_blank" class="btn-catalogo" title="Ver catálogo en PDF">
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </a>
+    <img src="img/1.png" alt="Logo Lunica Accesorios" class="logo">
+  </header>
 
   <nav class="menu">
     <a href="pages/gorros/gorros.html"><i class="fa-solid fa-hat-cowboy"></i> Gorros</a>
@@ -37,7 +35,26 @@
       <i class="fa-solid fa-download"></i> DESCARGA EL CATÁLOGO AQUÍ
     </a>
     <br><br>
-    <div class="temporada">Temporada<br> Otoño – Invierno</div>
+
+    <!-- Slider de temporadas -->
+    <div class="slider-temporada">
+      <div class="slide active" style="background-image: url('img/invierno.jpg');">
+        <div class="temporada">Temporada<br>Invierno</div>
+      </div>
+      <div class="slide" style="background-image: url('img/otoño.jpg');">
+        <div class="temporada">Temporada<br>Otoño</div>
+      </div>
+      <!--
+      <div class="slide" style="background-image: url('img/primavera.jpg');">
+        <div class="temporada">Temporada<br>Primavera</div>
+      </div>
+      <div class="slide" style="background-image: url('img/verano.jpg');">
+        <div class="temporada">Temporada<br>Verano</div>
+      </div>
+      -->
+      <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+      <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+    </div>
   </section>
 
   <section class="qr-section">
@@ -70,6 +87,30 @@
     </div>
     <p>© LUNICA 2025 - Todos los derechos reservados.</p>
   </footer>
+
+  <!-- Slider Script -->
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function mostrarSlide(n) {
+      slides.forEach((slide, index) => {
+        slide.classList.remove("active");
+        if (index === n) {
+          slide.classList.add("active");
+        }
+      });
+    }
+
+    function cambiarSlide(dir) {
+      currentSlide += dir;
+      if (currentSlide >= slides.length) currentSlide = 0;
+      if (currentSlide < 0) currentSlide = slides.length - 1;
+      mostrarSlide(currentSlide);
+    }
+
+    setInterval(() => cambiarSlide(1), 6000);
+  </script>
 
 </body>
 </html>
