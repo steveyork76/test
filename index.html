@@ -29,34 +29,32 @@
     <a href="pages/bufandas/bufandas.html"><i class="fa-solid fa-snowflake"></i> Bufandas</a>
     <a href="formulario/consultas.html"><i class="fa-solid fa-envelope"></i> Consultas</a>
   </nav>
-
   <section class="catalogo">
+  <!-- Slider de temporadas -->
+  <div class="slider-temporada">
+    <!-- Botón de descarga centrado arriba -->
     <a href="catalogo/Catalogo.pdf" target="_blank" class="descarga">
       <i class="fa-solid fa-download"></i> DESCARGA EL CATÁLOGO AQUÍ
     </a>
-    <br><br>
 
-    <!-- Slider de temporadas -->
-    <div class="slider-temporada">
-      <div class="slide active" style="background-image: url('img/invierno.jpg');">
-        <div class="temporada">Temporada<br>Invierno</div>
-      </div>
-      <div class="slide" style="background-image: url('img/otoño.jpg');">
-        <div class="temporada">Temporada<br>Otoño</div>
-      </div>
-      <!--
-      <div class="slide" style="background-image: url('img/primavera.jpg');">
-        <div class="temporada">Temporada<br>Primavera</div>
-      </div>
-      <div class="slide" style="background-image: url('img/verano.jpg');">
-        <div class="temporada">Temporada<br>Verano</div>
-      </div>
-      -->
-      <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
-      <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+    <div class="slide active" style="background-image: url('img/invierno.jpg');">
+      <div class="temporada">Temporada<br>Invierno</div>
     </div>
-  </section>
-
+    <div class="slide" style="background-image: url('img/otoño.jpg');">
+      <div class="temporada">Temporada<br>Otoño</div>
+    </div>
+    <!--
+    <div class="slide" style="background-image: url('img/primavera.jpg');">
+      <div class="temporada">Temporada<br>Primavera</div>
+    </div>
+    <div class="slide" style="background-image: url('img/verano.jpg');">
+      <div class="temporada">Temporada<br>Verano</div>
+    </div>
+    -->
+    <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+    <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+  </div>
+</section>
   <section class="qr-section">
     <div class="qr-contenedor">
       <div class="qr-text">

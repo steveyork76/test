@@ -184,9 +184,9 @@ nav a:hover {
   transform: translateX(-50%);
   font-family: 'Mistrully', 'Pacifico', cursive;
   font-size: 3em;
-  color: #2e2e2e;
+  color: #7e2222;
   padding: 1rem 2rem;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(216, 210, 210, 0.7);
   border-radius: 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -213,6 +213,35 @@ nav a:hover {
 .slider-temporada .next:hover {
   background-color: rgba(0,0,0,0.6);
 }
+
+.slider-temporada {
+  position: relative;
+  width: 100%;
+  height: 400px; /* o el alto que tú uses */
+  overflow: hidden;
+}
+
+.descarga {
+  position: absolute;
+  top: 20px; /* distancia desde la parte superior */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(165, 42, 42, 0.9); /* fondo marrón semitransparente */
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.descarga i {
+  margin-right: 8px;
+}
+
+
 
 
 /* -------------------- */
