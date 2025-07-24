@@ -186,7 +186,7 @@ nav a:hover {
   font-size: 3em;
   color: #7e2222;
   padding: 1rem 2rem;
-  background-color: rgba(216, 210, 210, 0.7);
+  background-color: rgba(151, 145, 145, 0.7);
   border-radius: 1rem;
   text-align: center;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
@@ -499,4 +499,42 @@ nav a:hover {
 
 .construccion a:hover {
   background-color: #805544;
+}
+/* -------------------- */
+/* SLIDER: BOTONES CON ICONOS */
+/* -------------------- */
+.slider-temporada .prev,
+.slider-temporada .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 1;
+}
+
+.slider-temporada .prev {
+  left: 20px;
+}
+
+.slider-temporada .next {
+  right: 20px;
+}
+
+.slider-temporada .prev:hover,
+.slider-temporada .next:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  transform: scale(1.1);
 }

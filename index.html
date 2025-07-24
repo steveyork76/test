@@ -4,21 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>🌙 LUNICA ACCESORIOS</title>
-  <link rel="icon" href="img/luna.ico" type="image/x-icon">
+  <link rel="icon" href="img/luna.ico" type="image/x-icon" />
   <link rel="stylesheet" href="style/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <header class="encabezado">
-    <a href="./catalogo/Catalogo.pdf" target="_blank" class="btn-catalogo" title="Ver catálogo en PDF">
+    <a href="./catalogo/Catalogo.pdf" target="_blank" class="btn-catalogo" aria-label="Ver catálogo en PDF">
       <i class="fa-solid fa-wand-magic-sparkles"></i>
     </a>
-    <img src="img/1.png" alt="Logo Lunica Accesorios" class="logo">
+    <img src="img/1.png" alt="Logo Lunica Accesorios" class="logo" />
   </header>
 
-  <nav class="menu">
+  <nav class="menu" aria-label="Menú principal">
     <a href="pages/gorros/gorros.html"><i class="fa-solid fa-hat-cowboy"></i> Gorros</a>
     <a href="pages/mitones/mitones.html"><i class="fa-solid fa-hand-sparkles"></i> Mitones</a>
     <a href="pages/calcetines/calcetines.html"><i class="fa-solid fa-socks"></i> Calcetines</a>
@@ -29,33 +29,36 @@
     <a href="pages/bufandas/bufandas.html"><i class="fa-solid fa-snowflake"></i> Bufandas</a>
     <a href="formulario/consultas.html"><i class="fa-solid fa-envelope"></i> Consultas</a>
   </nav>
-  <section class="catalogo">
-  <!-- Slider de temporadas -->
-  <div class="slider-temporada">
-    <!-- Botón de descarga centrado arriba -->
-    <a href="catalogo/Catalogo.pdf" target="_blank" class="descarga">
-      <i class="fa-solid fa-download"></i> DESCARGA EL CATÁLOGO AQUÍ
-    </a>
 
-    <div class="slide active" style="background-image: url('img/invierno.jpg');">
-      <div class="temporada">Temporada<br>Invierno</div>
+  <section class="catalogo" aria-label="Catálogo por temporada">
+    <div class="slider-temporada">
+      <a href="catalogo/Catalogo.pdf" target="_blank" class="descarga" title="Descargar catálogo en PDF">
+        <i class="fa-solid fa-download"></i> DESCARGA EL CATÁLOGO AQUÍ
+      </a>
+
+     
+      <div class="slide active"  style="background-image: url('img/otoño.jpg');">
+        <div class="temporada">Temporada<br>Otoño</div>
+      </div>
+       <div class="slide" style="background-image: url('img/invierno.jpg');">
+        <div class="temporada">Temporada<br>Invierno</div>
+      </div>
+      <!-- Puedes habilitar las siguientes cuando estén listas -->
+      <!--
+      <div class="slide" style="background-image: url('img/primavera.jpg');">
+        <div class="temporada">Temporada<br>Primavera</div>
+      </div>
+      <div class="slide" style="background-image: url('img/verano.jpg');">
+        <div class="temporada">Temporada<br>Verano</div>
+      </div>
+      -->
+
+      <button class="prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="next"><i class="fa-solid fa-chevron-right"></i></button>
     </div>
-    <div class="slide" style="background-image: url('img/otoño.jpg');">
-      <div class="temporada">Temporada<br>Otoño</div>
-    </div>
-    <!--
-    <div class="slide" style="background-image: url('img/primavera.jpg');">
-      <div class="temporada">Temporada<br>Primavera</div>
-    </div>
-    <div class="slide" style="background-image: url('img/verano.jpg');">
-      <div class="temporada">Temporada<br>Verano</div>
-    </div>
-    -->
-    <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
-    <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
-  </div>
-</section>
-  <section class="qr-section">
+  </section>
+
+  <section class="qr-section" aria-label="Código QR del catálogo">
     <div class="qr-contenedor">
       <div class="qr-text">
         <p>
@@ -64,51 +67,47 @@
           <span>AQUÍ <i class="fa-solid fa-arrow-down-long arrow-icon"></i></span>
         </p>
       </div>
-      <img src="img/3.jpeg" alt="QR Catálogo" />
+      <img src="img/3.jpeg" alt="Código QR del catálogo Lunica" />
     </div>
   </section>
 
   <footer class="footer">
-    <div class="redes-sociales">
-      <a href="links/construccion/en_construccion.html" target="_blank" title="Instagram">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-      <a href="links/construccion/en_construccion.html" target="_blank" title="WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-      <a href="links/construccion/en_construccion.html" target="_blank" title="Teléfono">
-        <i class="fa-solid fa-phone"></i>
-      </a>
-      <a href="links/construccion/en_construccion.html" target="_blank" title="Facebook">
-        <i class="fa-brands fa-facebook-f"></i>
-      </a>
+    <div class="redes-sociales" aria-label="Redes Sociales">
+      <a href="links/construccion/en_construccion.html" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="links/construccion/en_construccion.html" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="links/construccion/en_construccion.html" target="_blank" title="Teléfono"><i class="fa-solid fa-phone"></i></a>
+      <a href="links/construccion/en_construccion.html" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
     </div>
     <p>© LUNICA 2025 - Todos los derechos reservados.</p>
   </footer>
 
   <!-- Slider Script -->
   <script>
-    let currentSlide = 0;
-    const slides = document.querySelectorAll(".slide");
+      let currentSlide = 0;
+      const slides = document.querySelectorAll(".slide");
 
-    function mostrarSlide(n) {
-      slides.forEach((slide, index) => {
-        slide.classList.remove("active");
-        if (index === n) {
-          slide.classList.add("active");
-        }
+      function mostrarSlide(n) {
+        slides.forEach((slide, index) => {
+          slide.classList.toggle("active", index === n);
+        });
+      }
+    
+      function cambiarSlide(dir) {
+        currentSlide = (currentSlide + dir + slides.length) % slides.length;
+        mostrarSlide(currentSlide);
+      }
+    
+      document.querySelector(".prev").addEventListener("click", () => {
+        cambiarSlide(-1);
       });
-    }
-
-    function cambiarSlide(dir) {
-      currentSlide += dir;
-      if (currentSlide >= slides.length) currentSlide = 0;
-      if (currentSlide < 0) currentSlide = slides.length - 1;
-      mostrarSlide(currentSlide);
-    }
-
-    setInterval(() => cambiarSlide(1), 6000);
+    
+      document.querySelector(".next").addEventListener("click", () => {
+        cambiarSlide(1);
+      });
+    
+      setInterval(() => cambiarSlide(1), 6000);
   </script>
+
 
 </body>
 </html>
