@@ -223,10 +223,10 @@ nav a:hover {
 
 .descarga {
   position: absolute;
-  top: 20px; /* distancia desde la parte superior */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(165, 42, 42, 0.9); /* fondo marrón semitransparente */
+  background-color: rgba(165, 42, 42, 0.9);
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
@@ -235,26 +235,8 @@ nav a:hover {
   z-index: 10;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 1rem;
 }
-
-.descarga i {
-  margin-right: 8px;
-}
-
-@media (max-width: 600px) {
-  .descarga {
-    font-size: 0.8rem;     /* Reduce tamaño de texto */
-    padding: 0.5rem 1rem;  /* Reduce padding */
-    width: auto;           /* Para que no tome todo el ancho */
-  }
-
-  .descarga i {
-    margin-right: 5px;     /* Ajusta margen del ícono */
-  }
-}
-
-
-
 /* -------------------- */
 /* BOTÓN VOLVER */
 /* -------------------- */
@@ -548,4 +530,15 @@ nav a:hover {
   background-color: rgba(255, 255, 255, 0.9);
   color: #333;
   transform: scale(1.1);
+}
+@media (max-width: 600px) {
+  .descarga {
+    font-size: 0.7rem !important;
+    padding: 0.4rem 0.8rem !important;
+    width: auto !important;
+  }
+
+  .descarga i {
+    margin-right: 5px !important;
+  }
 }
