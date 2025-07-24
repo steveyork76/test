@@ -241,6 +241,17 @@ nav a:hover {
   margin-right: 8px;
 }
 
+@media (max-width: 600px) {
+  .descarga {
+    font-size: 0.8rem;     /* Reduce tamaño de texto */
+    padding: 0.5rem 1rem;  /* Reduce padding */
+    width: auto;           /* Para que no tome todo el ancho */
+  }
+
+  .descarga i {
+    margin-right: 5px;     /* Ajusta margen del ícono */
+  }
+}
 
 
 
